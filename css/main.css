@@ -152,6 +152,34 @@ span.endpoint {
   font-weight: 600;
   padding: 0px 10px;
 }
+.copiedMessage {
+  z-index: 9999;
+  position: absolute;
+  margin-top: 25px;
+  padding: 5px 15px;
+  border-radius: 9px;
+  background-color: #fff;
+  color: #202020;
+  transition: all 1000ms;
+  opacity: 1;
+}
+.copiedMessage.hidden {
+  display: block !important;
+  transition: all 1000ms;
+  opacity: 0;
+}
+div.copiedMessage::after {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 11px solid #fff;
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: -11px;
+  left: 161px;
+}
 input {
   font-family: 'Krub', sans-serif;
   font-size: 1rem;

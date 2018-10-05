@@ -1,8 +1,18 @@
 // One-click copy endpoint
-$('input.endpoint').click(function() {
-  this.select()
+$('#endpoint').click(function() {
+  $('input.endpoint').select();
   document.execCommand("copy");
+  
+  successCopy();
 })
+
+// Show success copy message
+function successCopy() {
+  $('.copiedMessage').removeClass('hidden');
+  setTimeout(() => {
+    $('.copiedMessage').addClass('hidden');
+  }, 3000);
+}
 
 // Contributors section effects
 $('#contributors figure').hover(function() {
