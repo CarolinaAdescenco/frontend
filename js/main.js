@@ -1,3 +1,14 @@
+// Function for copy success alert
+function copyAlert() {
+  $( ".copy-success" ).animate({ borderWidth: "4px" }, 500 );
+  $( ".copy-success-label" ).animate({ marginTop: "0px" }, 500, function() {
+    $( this ).animate({marginTop: "0px"}, 2000, function(e) {
+      $( ".copy-success-label" ).animate({ marginTop: "-27px" }, 500 );
+      $( ".copy-success" ).animate({ borderWidth: "0px" }, 500 );
+    });
+  });
+}
+
 // One-click copy endpoint
 $('#endpoint').click(function() {
   $('input.endpoint').select();
