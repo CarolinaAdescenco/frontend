@@ -8,9 +8,9 @@ $('#endpoint').click(function() {
 
 // Show success copy message
 function successCopy() {
-  $('.copiedMessage').removeClass('hidden');
+  $('.copied-message').removeClass('hidden');
   setTimeout(() => {
-    $('.copiedMessage').addClass('hidden');
+    $('.copied-message').addClass('hidden');
   }, 3000);
 }
 

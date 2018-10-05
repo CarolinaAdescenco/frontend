@@ -152,7 +152,7 @@ span.endpoint {
   font-weight: 600;
   padding: 0px 10px;
 }
-.copiedMessage {
+.copied-message {
   z-index: 9999;
   position: absolute;
   margin-top: 25px;
@@ -163,12 +163,12 @@ span.endpoint {
   transition: all 1000ms;
   opacity: 1;
 }
-.copiedMessage.hidden {
+.copied-message.hidden {
   display: block !important;
   transition: all 1000ms;
   opacity: 0;
 }
-div.copiedMessage::after {
+div.copied-message::after {
   width: 0;
   height: 0;
   border-left: 7px solid transparent;
