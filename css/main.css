@@ -144,6 +144,16 @@ header {
 #endpoint {
   margin-top: 30px;
 }
+.copy-success {
+  border-radius: 16px;
+  border: 0px solid #28a745;
+  background-color: #28a745;
+}
+.copy-success-label {
+  margin-top: -27px;
+  display: block;
+  padding-top: 5px;
+}
 span.endpoint {
   display: inline-block;
   height: 40px;
@@ -151,6 +161,34 @@ span.endpoint {
   background-color: #ff4a4a;
   font-weight: 600;
   padding: 0px 10px;
+}
+.copied-message {
+  z-index: 9999;
+  position: absolute;
+  margin-top: 25px;
+  padding: 5px 15px;
+  border-radius: 9px;
+  background-color: #fff;
+  color: #202020;
+  transition: all 1000ms;
+  opacity: 1;
+}
+.copied-message.hidden {
+  display: block !important;
+  transition: all 1000ms;
+  opacity: 0;
+}
+div.copied-message::after {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 11px solid #fff;
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: -11px;
+  left: 161px;
 }
 input {
   font-family: 'Krub', sans-serif;
