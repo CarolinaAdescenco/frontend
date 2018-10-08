@@ -13,7 +13,7 @@ function copyAlert() {
 $('#endpoint').click(function() {
   $('input.endpoint').select();
   document.execCommand("copy");
-  
+
   successCopy();
 })
 
@@ -44,7 +44,7 @@ $('#form-cep').submit(function(e)  {
   responseBox.text('Buscando...')
 
   $.ajax({
-    url: `http://fastcep.appspot.com/v1/${formattedInput}`,
+    url: `http://fastcep.appspot.com/${formattedInput}`,
     method: 'GET'
   }).done(data => {
     responseBox.text(JSON.stringify(data, null, 2))

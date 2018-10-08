@@ -201,7 +201,8 @@ input {
   background-color: #f8f8f8;
 }
 input.endpoint {
-  width: 375px;
+  /* width: 375px; */
+  width: 355px;
   position: relative;
   left: 10px;
   display: inline-block;
