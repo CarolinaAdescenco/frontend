@@ -44,7 +44,7 @@ $('#form-cep').submit(function(e)  {
   responseBox.text('Buscando...')
 
   $.ajax({
-    url: `http://fastcep.appspot.com/${formattedInput}`,
+    url: `https://fastcep.appspot.com/${formattedInput}`,
     method: 'GET'
   }).done(data => {
     responseBox.text(JSON.stringify(data, null, 2))
